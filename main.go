@@ -46,7 +46,7 @@ func main() {
 				continue
 			}
 			fileStr := fileName + ".pdf"
-			err := pdf.OutputFileAndClose("./output/" + fileStr)
+			err := pdf.OutputFileAndClose("./pdf_files/" + fileStr)
 			if err != nil {
 				pdf.SetError(err)
 			}
